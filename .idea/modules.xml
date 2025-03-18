@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/1.1_module/1.1_module.iml" filepath="$PROJECT_DIR$/1.1_module/1.1_module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/olio-programming25k2.iml" filepath="$PROJECT_DIR$/olio-programming25k2.iml" />
+    </modules>
+  </component>
+</project>
