@@ -14,8 +14,6 @@ public class task4 {
         task4 cat1 = new task4("Whiskers");
         task4 cat2 = new task4("Rex");
 
-
-
         // Tulostetaan vaadittu järjestys
         cat1.meow();
         cat2.meow();
