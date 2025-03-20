@@ -4,6 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/1.1_module/1.1_module.iml" filepath="$PROJECT_DIR$/1.1_module/1.1_module.iml" />
       <module fileurl="file://$PROJECT_DIR$/1.2_module/1.2_module.iml" filepath="$PROJECT_DIR$/1.2_module/1.2_module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/1.3_module/1.3_module.iml" filepath="$PROJECT_DIR$/1.3_module/1.3_module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/1.4_module/1.4_module.iml" filepath="$PROJECT_DIR$/1.4_module/1.4_module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/1.5_module/1.5_module.iml" filepath="$PROJECT_DIR$/1.5_module/1.5_module.iml" />
       <module fileurl="file://$PROJECT_DIR$/olio-programming25k2.iml" filepath="$PROJECT_DIR$/olio-programming25k2.iml" />
     </modules>
   </component>
