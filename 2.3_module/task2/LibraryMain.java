@@ -1,14 +1,14 @@
 public class LibraryMain {
     public static void main(String[] args) {
-        // Luo library
+        // Luo kirjasto
         Library library = new Library();
 
         // Luo kirjat
         Book book1 = new Book("1984", "George Orwell", 1949);
         Book book2 = new Book("To Kill a Mockingbird", "Harper Lee", 1960);
-        Book book3 = new Book("Animal Farm", "George Orwell", 1945);
-        Book book4 = new Book("The Great Gatsby", "F. Scott Fitzgerald", 1925);
-        Book book5 = new Book("Brave New World", "Aldous Huxley", 1932);
+        Book book3 = new Book("The Great Gatsby", "F. Scott Fitzgerald", 1925);
+        Book book4 = new Book("Moby Dick", "Herman Melville", 1851);
+        Book book5 = new Book("War and Peace", "Leo Tolstoy", 1869);
 
         // Lisää kirjat kirjastoon
         library.addBook(book1);
@@ -17,22 +17,25 @@ public class LibraryMain {
         library.addBook(book4);
         library.addBook(book5);
 
-        // Display books before borrowing Näytä kirjat ennen lainaamista
+        // Näytä kirjat kirjastossa
         library.displayBooks();
 
-        // Lainaa krijaa
+        // Lainaa kirjaa
         library.borrowBook("1984");
 
-        // Yritä lainata kirjaa jotta ei ole olemassa
-        library.borrowBook("The Great Gatsby");
+        // Tarkista onko kirja tallessa
+        System.out.println("\nIs '1984' available? " + library.isBookAvailable("1984"));
+        System.out.println("Is 'The Great Gatsby' available? " + library.isBookAvailable("The Great Gatsby"));
 
-        // DNäytä kirjaa lainauksen jälkeen
-        library.displayBooks();
-
-        // Palauta kirjaa
+        // Palauta kirja
         library.returnBook(book1);
 
-        // Näytä kirjan lainauksen jälkeen
+        // arvioi kirja
+        book1.setRating(4.5);
+        book1.addReview("A thought-provoking novel.");
+        book1.addReview("Great political commentary.");
+
+        // Näytä kirjat lainaukset jölkeen
         library.displayBooks();
     }
 }
