@@ -1,3 +1,4 @@
+package task1;
 import java.util.ArrayList;
 
 public class Library {
@@ -21,7 +22,7 @@ public class Library {
         }
     }
 
-    // Method etsiä kirjat to specific kirjailijaan
+    // Method etsiä kirjat to specific to kirjailijaan
     public void findBooksByAuthor(String author) {
         boolean found = false;
         System.out.println("\nBooks by " + author + ":");

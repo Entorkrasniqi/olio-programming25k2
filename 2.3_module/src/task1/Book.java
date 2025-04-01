@@ -1,3 +1,4 @@
+package task1;
 public class Book {
     private String title;
     private String author;
@@ -26,5 +27,25 @@ public class Book {
     // Methodi näyttää kirjat in details
     public void displayBookInfo() {
         System.out.println(title + " by " + author + " (Published: " + publicationYear + ")");
+    }
+
+    public int getRating() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getRating'");
+    }
+
+    public int getReviewCount() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getReviewCount'");
+    }
+
+    public void setRating(double d) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'setRating'");
+    }
+
+    public void addReview(String string) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'addReview'");
     }
 }
