@@ -4,14 +4,14 @@ public class Book {
     private String author;
     private int publicationYear;
 
-    // Constructor
+    // Constructori
     public Book(String title, String author, int publicationYear) {
         this.title = title;
         this.author = author;
         this.publicationYear = publicationYear;
     }
 
-    // Getters
+    // Getters eli hakumethodeja
     public String getTitle() {
         return title;
     }
@@ -30,22 +30,18 @@ public class Book {
     }
 
     public int getRating() {
-        // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'getRating'");
     }
 
     public int getReviewCount() {
-        // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'getReviewCount'");
     }
 
     public void setRating(double d) {
-        // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'setRating'");
     }
 
     public void addReview(String string) {
-        // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'addReview'");
     }
 }
