@@ -1,22 +1,32 @@
 package carpackage;
-public class SportsCar {
-    private Person owner;
-    private String model;
-    //private int    gears;
-    private String sound;
-    
-    public SportsCar(Person owner, String model, String sound) {
-       this.owner = owner;
-       this.model = model;
-       //this.gears = gears;
-       this.sound = sound;
+
+public class SportsCar extends Car {
+    public SportsCar(String typeName) {
+        super(typeName); // Calls Car constructor
     }
-    
-    public void drive() {
-       System.out.println(this.model + ": " + owner.getName() + " drives");
+
+    @Override
+    public void accelerate() {
+        if (getGasolineLevel() > 0) {
+            super.accelerate(); // Increase speed by 10 (from Car class)
+            super.accelerate(); // Increase speed by another 10 (twice the normal rate)
+            useGasoline(5); // Higher fuel consumption
+        } else {
+            System.out.println("Out of fuel! Please fill the tank.");
+        }
     }
- 
-    public String getSound() {
-       return sound;
+
+    @Override
+    public void decelerate(int amount) {
+        super.decelerate(amount * 2); // Decelerates faster than a normal car
     }
- }
+
+    private void useGasoline(double amount) {
+        double currentGasoline = getGasolineLevel();
+        if (currentGasoline >= amount) {
+            System.out.println("Gasoline used: " + amount + " liters.");
+        } else {
+            System.out.println("Not enough fuel!");
+        }
+    }
+}

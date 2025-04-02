@@ -2,10 +2,14 @@ package carpackage;
 
 public class SportsCarMain {
     public static void main(String[] args) {
-        Person person1 = new Person("John", "Doe");
-        SportsCar car1 = new SportsCar(person1, "Ferrari", "Vroom");
+        SportsCar ferrari = new SportsCar("Ferrari");
+        ferrari.fillTank(); // Fill the tank before driving
 
-        car1.drive(); // John Doe drives Ferrari
-        person1.drive(car1, 3); // Drives 3 km with sound "Vroom"
+        System.out.println("Gasoline level: " + ferrari.getGasolineLevel());
+        ferrari.accelerate(); // Should accelerate faster than normal cars
+        System.out.println("Current speed: " + ferrari.getSpeed());
+
+        ferrari.decelerate(5);
+        System.out.println("Speed after deceleration: " + ferrari.getSpeed());
     }
 }
