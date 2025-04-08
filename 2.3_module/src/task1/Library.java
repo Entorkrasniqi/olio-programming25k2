@@ -4,7 +4,7 @@ import java.util.ArrayList;
 public class Library {
     private ArrayList<Book> books = new ArrayList<>();
 
-    // Library Methodi lisätä kirja, kirjasto methodiin
+    // Library Methodi lisätä kirja kirjasto methodiin
     public void addBook(Book book) {
         books.add(book);
         System.out.println("Book added: " + book.getTitle());
