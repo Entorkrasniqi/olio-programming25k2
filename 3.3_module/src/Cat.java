@@ -23,7 +23,6 @@ public class Cat {
         Cat cat1 = new Cat ("misse", "Mjau");
         Cat cat2 = new Cat("Pekka", "Vuff");
 
-
         System.out.println(cat1.say());
         System.out.println(cat2.say());
         System.out.println(Cat.getCatCount());
