@@ -11,12 +11,12 @@ class Theater {
         // if seat avaialble reserve the seat, if not available decline the reservation
         if (seatsRequested <= availableSeats) {
             availableSeats -= seatsRequested;
-            System.out.println("✅ " + customerName + " successfully reserved " + seatsRequested + " seat(s).");
-            System.out.println("🎟️ Seats left: " + availableSeats + "\n");
+            System.out.println(customerName + " successfully reserved " + seatsRequested + " seat(s).");
+            System.out.println(" Seats left: " + availableSeats + "\n");
             return true;
             // Decline the reservation
         } else {
-            System.out.println("❌ Sorry, not enough seats for " + customerName + ". Seats left: " + availableSeats + "\n");
+            System.out.println(" Sorry, not enough seats for " + customerName + ". Seats left: " + availableSeats + "\n");
             return false;
         }
     }
