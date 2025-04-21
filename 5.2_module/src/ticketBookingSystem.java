@@ -41,3 +41,24 @@ class Customer extends Thread {
     }
 
 }
+
+public class ticketBookingSystem {
+    public static void main(String[] args) {
+        // Create a theater with 10 seats
+        Theater theater = new Theater(10);
+        // create 5 customers
+        Customer customer = new Customer(theater, 1, "Batman");
+        Customer customer2 = new Customer(theater, 2, "Superman");
+        Customer customer3 = new Customer(theater, 3, "Shakespeare");
+        Customer customer4 = new Customer(theater, 4, "Joackin");
+        Customer customer5 = new Customer(theater, 5 , "Joker");
+
+        // Start the threads
+
+        customer.start();
+        customer2.start();
+        customer3.start();
+        customer4.start();
+        customer5.start();
+    }
+}
