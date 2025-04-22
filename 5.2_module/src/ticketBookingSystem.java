@@ -23,7 +23,7 @@ class Theater {
 }
 
 // create method to simulate a customer trying to reserve a seat.
-
+//create constructor to initialize the theater and the seat to book
 class Customer extends Thread {
     private Theater theater;
     private int seatToBook;
@@ -54,7 +54,6 @@ public class ticketBookingSystem {
         Customer customer5 = new Customer(theater, 5 , "Joker");
 
         // Start the threads
-
         customer.start();
         customer2.start();
         customer3.start();
