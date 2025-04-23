@@ -1,11 +1,12 @@
 import java.util.List;
 import java.util.ArrayList;
 
+
 public class SimulatorTest {
     public static void main(String[] args) {
-        List<Event> eventList = new ArrayList<>();
+        List<Event> eventList = new ArrayList<>(); // List to holdaa eventtei
         Clock.getInstance().setTime(0);
-        ArrivalProcess ap = new ArrivalProcess(EventType.ARRIVAL, 0.5);
+        ArrivalProcess ap = new ArrivalProcess(EventType.ARRIVAL, 0.5); // aArrival processoida ratea
         ap.generateArrivals(eventList, 10);
 
         ServicePoint servicePoint = new ServicePoint();

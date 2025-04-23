@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class AgeDistributionSimulator {
-
+// Simulate a simple age distribution based on propabilities
     static class AgeRange {
         int age;
         double cumulativeProbability;

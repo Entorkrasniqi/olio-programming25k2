@@ -6,7 +6,7 @@ public class ServicePoint {
     public void addCustomer(Customer c) {
         queue.add(c);
     }
-
+// Method procesoida the customer
     public void clearCustomers(double currentTime) {
         while (!queue.isEmpty()) {
             Customer c = queue.poll();

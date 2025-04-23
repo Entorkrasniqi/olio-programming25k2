@@ -1,6 +1,6 @@
 public class Customer {
     private final double arrivalTime;
-
+// Private final asiakas
     public Customer(double arrivalTime) {
         this.arrivalTime = arrivalTime;
     }

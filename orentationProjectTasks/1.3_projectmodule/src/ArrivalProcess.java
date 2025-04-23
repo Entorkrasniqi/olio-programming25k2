@@ -3,7 +3,7 @@ import java.util.*;
 public class ArrivalProcess {
     private final ExponentialDistribution generator;
     private final EventType eventType;
-
+// sd
     public ArrivalProcess(EventType eventType, double rate) {
         this.generator = new ExponentialDistribution(rate);
         this.eventType = eventType;
