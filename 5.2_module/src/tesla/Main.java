@@ -28,9 +28,9 @@ public class Main {
 
         
 
-        class Car extends Vehicle {
-            protected String model;
-            public Car (String make, String model, int year) {
+        class Car extends Vehicle { //supclass extends vehicle
+            protected String model; // class level declaration
+            public Car (String make, String model, int year) { // construtor 
                 super(make, year);
                 this.make = make;
                 this.year = year;
