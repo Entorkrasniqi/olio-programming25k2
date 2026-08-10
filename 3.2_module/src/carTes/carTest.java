@@ -1,3 +1,5 @@
+package carTes;
+
 public class carTest {
     // a class which is called Car and inside it class's Data (fields) speed, name, weight, price
     class Car {
